@@ -9,7 +9,7 @@ const Cart = ({ state, dispatch }) => {
       (acc, curr) => acc + Number(curr.price) * curr.qyt,
       0
     );
-    setTotal(totalPrice);
+    setTotal(totalPrice.toFixed(2));
   };
 
   useEffect(() => {
